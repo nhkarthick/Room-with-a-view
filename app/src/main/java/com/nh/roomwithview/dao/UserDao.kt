@@ -18,7 +18,7 @@ interface UserDao {
     @Insert(onConflict = OnConflictStrategy.IGNORE)
     fun insert(department: Department)
 
-    @Query("DELETE FROM user_table")
+    @Query("DELETE FROM student_table")
     fun deleteAll()
 
     @Query("SELECT * FROM UserDetail")
